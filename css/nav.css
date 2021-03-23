@@ -1,0 +1,22 @@
+/* Nest Nav */
+nav {
+  padding: 1em;
+}
+nav ul {
+  list-style: none;
+  padding-left: 3em;
+}
+nav li {
+  display: inline-block;
+  color: white;
+  font-family: Arial, Helvetica, Sans-Serif;
+  font-size: 1.5rem;
+}
+nav a {
+  display: block;
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=nav.css.map */

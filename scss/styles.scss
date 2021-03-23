@@ -1,0 +1,82 @@
+@import "colors.scss";
+/* Variables */
+
+@mixin bg_color {
+  background-color: $color_4;
+}
+
+//Global
+* {
+  background-color: $color_1;
+  font-size: 1.2rem;
+}
+
+/* Nest Main */
+main {
+  width: 94%;
+  border: 1.2rem solid $color_3;
+  margin: 1em;
+  min-height: 700px;
+  @include bg_color;
+  display: flex;
+  justify-content: space-between;
+
+  #intro-text {
+    width: 40%;
+    position: relative;
+    @include bg_color;
+    text-align: center;
+    padding-top: 9rem;
+    padding-bottom: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    span {
+      @include bg_color;
+      font-family: $font_2;
+      font-size: 3rem;
+    }
+
+    p {
+      @include bg_color;
+      font-family: $font_1;
+      font-size: 1.3rem;
+      margin-top: 2em;
+    }
+
+    h3 {
+      @include bg_color;
+      font-family: $font_1;
+      font-size: 2.5rem;
+      margin: 1rem;
+    }
+
+    button {
+      height: 60px;
+      width: 12rem;
+      margin-top: 2.5rem;
+      color: $color_3;
+      font-weight: bold;
+      border: none;
+    }
+  }
+
+  #intro-image {
+    width: 60%;
+    position: relative;
+    @include bg_color;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+footer {
+  padding-left: 4rem;
+  padding-top: 1rem;
+  font-size: 1.2rem;
+}
+
+// Mixin or Extend for button
